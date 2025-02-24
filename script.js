@@ -51,11 +51,11 @@ buttons.forEach((button)=>{
         let input = button.id;
 
         if(isNumber(input)){
-            if(op === ""){
+            if(op === "" && num1.length <=5){
                 num1 +=input;
                 display(num1);
             }
-            else if(op !== ""){
+            else if(op !== "" && num2.length <=5){
                 num2 +=input;
                 display(num2);
             }
@@ -63,11 +63,11 @@ buttons.forEach((button)=>{
         }
         else  if(isOperator(input)){
 
-            if(num1 !== "" && num2 === ""){
+            if(num1 !== "" && num2 === "" ){
                 op = input;
                 display(num1 +" " + op);
             }
-            else if(num1 !== "" && num2 !== ""){
+            else if(num1 !== "" && num2 !== "" ){
                 num1 = operation(num1,op,num2).toString();
                 op= "";
                 num2 = "";
