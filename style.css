@@ -1,0 +1,103 @@
+
+body{
+    color: white;
+    text-align: center;
+    font-family: "Roboto Mono", Consolas, "Courier New", Courier, monospace;
+    background-color:#333943;
+}
+#Calculator{
+
+    display: inline-block;
+    align-self: center;
+    width: 30%;
+    height: 550px;
+    box-shadow: 0 0 10px 5px  rgba(255, 255, 255, 0.493);
+    margin: 1% 35% 0% 35%;
+    background-color: #2a2e36;
+    border: solid #2a2e36 10px ;
+    overflow: hidden;
+
+
+}
+
+#Screen{
+    display:flex;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 91.5px ;
+    background-color: #F9F9F9;
+    border-radius: 10px;
+    align-items: center; /* Center text vertically*/
+    justify-content: right; /*keep text aligned to the right*/
+    color:#333333;
+    border: solid black 3px;
+    box-sizing: border-box;
+
+
+}
+
+#Screen p{
+    font-size: 4rem;
+    padding-right: 8%;
+    line-height: 91; /*Match screen height*/
+    text-shadow: 1px 1px 3px black ;
+    font-weight: bold;
+}
+
+#row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:1px;
+    width: 100%;
+    height:  91.5px;
+    border: solid black 1px;
+    box-sizing:border-box;
+
+
+    
+}
+
+#rowLast{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1px;
+    width: 100%;
+    height: 91.5px;
+    border: solid black 1px;
+    box-sizing:border-box;
+}
+button{
+    border-radius: 2px;
+    border: solid gray 0.5px;
+    cursor: pointer;
+    font-size: larger;
+    font:sans-serif;
+
+}
+
+.number{
+    background-color:#E0E0E0;
+
+}
+
+.operator{
+    background-color:#4A90E2;
+
+}
+
+.function{
+    background-color: #A8D5BA;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+header h1{
+    flex-grow: 1; /*take the avaiable space*/
+    text-align: center;
+    padding-right: 50px;
+}
+
